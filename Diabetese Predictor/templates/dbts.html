@@ -1,0 +1,23 @@
+<! Here we will create a form that will take input from the user through web browser>
+<! Then the data will go to the backend (model.py) where the model will predict the result.
+
+<! Let's create the form>
+<! All the variables should be in the sequence as they are in the model>
+
+<html>
+    <body>
+        <form method='post' action='/input'>
+            <input type="number" name="preg" placeholder="preg" required="Requiered">
+            <input type="number" name="plas" placeholder="plas" required="Requiered">
+            <input type="number" name="pres" placeholder="pres" required="Requiered">
+            <input type="number" name="skin" placeholder="skin" required="Requiered">
+            <input type="number" name="test" placeholder="test" required="Requiered">
+            <input type="number" name="mass" placeholder="mass" required="Requiered">
+            <input type="number" name="pedi" placeholder="pedi" required="Requiered">
+            <input type="number" name="age" placeholder="age" required="Requiered">
+            <button>
+                Submit
+            </button>
+        </form>
+    </body>
+</html>
