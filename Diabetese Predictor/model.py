@@ -12,7 +12,7 @@ import joblib
 app=Flask(__name__)
 
 # Loading the model
-model=joblib.load('Model\Diabetic_80.pkl')
+model=joblib.load('Diabetic_80.pkl')
 
 # Now that we have loaded the model so render the html file
 
@@ -39,7 +39,7 @@ def input():
     # print(data)
     # return 'data received'
     return render_template('predict.html', out=res)
-app.run(debug=True)
+app.run(host='0.0.0.0',port=8080)
 
 # Success- The result is shown in the terminal not on the webpage
 # To overcom this problem we will create another html file named predict
